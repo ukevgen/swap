@@ -1,5 +1,4 @@
 async function connect () {
-  alert(window === window.window);
   if (typeof window.ethereum !== "undefined") {
     try {
       console.log("connecting");
@@ -14,3 +13,5 @@ async function connect () {
       "Please install MetaMask";
   }
 };
+
+document.getElementById("login_button").onclick = connect();
